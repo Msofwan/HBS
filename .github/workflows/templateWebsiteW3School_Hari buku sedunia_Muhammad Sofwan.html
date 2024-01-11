@@ -1,0 +1,191 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            /* Di bawah ini (yang diapit kutip) adalah background header yaitu gambar foto pahlawan nasional, silakan ganti dengan file lain*/
+            background-image: url("https://celadonbooks.com/wp-content/uploads/2019/10/reading-quotes-7.jpg");
+
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Links (sit on top) Daftar link yang ada di bagian atas halaman -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">Beranda</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#23april" class="w3-button w3-block w3-black">23 April</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#Nama Buku" class="w3-button w3-block w3-black">Nama buku</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#pesan" class="w3-button w3-block w3-black">Pesan</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image/ Header dengan gambar -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">23 April hari buku sedunia</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:90px">Hari<br>membaca sedunia</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">Ayo kita peringati!</span>
+        </div>
+    </header>
+
+    <!-- Menambahkan warna background dan tulisan besar di seluruh halaman -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- Kontainer 23 April -->
+        <div class="w3-container" id="23april">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">23 April</span></h5>
+                <p>
+                    Tahukah teman-teman bahwa 23 April adalah hari buku sedunia? </p>
+                <p>Buku merupakan jendela dunia. Dengan membaca buku, kita bisa tahu apa saja.</p>
+                <!-- Di bawah ini ada tempat untuk menaruh quote/ kata mutiara-->
+                <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>"Books are the plane, and the train, and the road. They are the destination, and the journey. They are home."</i></p>
+                    <p>Anna Quindlen</p>
+                </div>
+                <!-- Di bawah ini adalah gambar pahlawan nasional. Silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="reading by the bed"
+                    src="https://celadonbooks.com/wp-content/uploads/2019/10/reading-quotes-1.jpg"
+                    style="width:100%;max-width:1000px" class="w3-margin-top">
+
+            </div>
+        </div>
+
+        <!-- Kontainer Nama Buku -->
+        <div class="w3-container" id="namabuku">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Nama buku</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'BukuInternasional');" id="myLink">
+                        <div class="w3-col s6 tablink">Buku Internasional</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'BukuIndonesia');">
+                        <div class="w3-col s6 tablink">Buku Indonesia</div>
+                    </a>
+                </div>
+
+                <div id="BukuInternasional" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>The Things You Can See Only When You Slow Down – Haemin Sunim</h5>
+                    <p class="w3-text-grey">Buku terlaris berjuta-juta salinan kebijaksanaan spiritual tentang pentingnya melambat di dunia </p><br>
+
+                    <h5>Almond – Sohn Won – Pyung</h5>
+                    <p class="w3-text-grey">“Almond” adalah novel yang memberi harapan kepada orang seperti saya yang percaya bahwa hati dapat mengendalikan kepala. Di akhir musim dingin yang panjang, tibalah musim semi. Di musim semi, saat tanaman tumbuh, emosi pun tumbuh. Jika emosi tumbuh, maka dunia pun ikut tumbuh. Selama membaca tulisan ini, hatiku selalu berdebar-debar. Di musim semi yang akan datang, tulisan ini akan menjadi sebuah petasan indah yang akan meledakkan seluruh emosi. – Novelis Gong Seonok</p><br>
+
+                    <h5>Bicara Itu Ada Seninya – Oh Su Hyang</h5>
+                    <p class="w3-text-grey">Ketika komunikasi menjadi hal yang penting untuk bersaing, pakar komunikasi Oh Su Hyang mengeluarkan buku yang sangat berarti. Selain berisi tentang pengalaman peningkatan diri, buku ini juga memuat berbagai konten mengenai teknik komunikasi, persuasi, dan negosiasi.</p><br>
+
+                    <h5>Sapiens – Yuval Noah Harari</h5>
+                    <p class="w3-text-grey">SELAMA dua setengah juta tahun, berbagai spesies manusia hidup dan punah di Bumi, sampai akhirnya tersisa satu, Homo sapiens, Manusia Bijaksana, sejak seratusan ribu tahun lalu. Namun spesies ini bisa menyebar ke seluruh dunia dan beranak-pinak hingga berjumlah 7 miliar, dan kini menjadi kekuatan alam yang dapat mengubah kondisi planet. Apa penyebabnya?>
+
+                </div>
+
+                <div id="BukuIndonesia" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Lukacita – Valerie Patkar</h5>
+                    <p class="w3-text-grey">Untuk mereka yang berhasil menggapai cita-cita, tetapi masih terluka karenanya. Lukacita bercerita tentang para pemimpi yang dikhianati cita-cita mereka sendiri. Ada seorang pendiri perusahaan startup idealis bernama Javier dan seorang mantan atlet catur penakut bernama Utara. Saat mereka hampir menyerah untuk memperjuangkan apa yang mereka cita-citakan selama ini, mereka bertemu untuk belajar memaafkan keadaan.</p><br>
+
+                    <h5>Selamat Tinggal – Tere Liye</h5>
+                    <p class="w3-text-grey">Kita tidak sempurna. Kita mungkin punya keburukan, melakukan kesalahan, bahkan berbuat jahat, menyakiti orang lain. Tapi beruntunglah yang mau berubah. Berjanji tidak melakukannya lagi, memperbaiki, dan menebus kesalahan tersebut.</p><br>
+
+                    <h5>Leila S. Chudori – Laut Bercerita</h5>
+                    <p class="w3-text-grey">Laut Bercerita bertutur tentang kisah keluarga yang kehilangan, sekumpulan sahabat yang merasakan kekosongan di dada, sekelompok orang yang gemar menyiksa dan lancar berkhianat, sejumlah keluarga yang mencari kejelasan makam anaknya, dan tentang cinta yang tak akan luntur.</p><br>
+
+                    <h5>Apa yang Kita Pikirkan ketika Kita Sendirian – Desi Anwar</h5>
+                    <p class="w3-text-grey">Buku ini dapat menjadi salah satu buku yang sangat cocok untuk dibaca bagi siapapun yang ingin menyikapi kesendirian dengan cara yang lebih bijak.</p><br>
+
+                </div>
+                <!--Di bawah ini ada gambar pahlawan secara umum, silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="membaca membawa kehangatan"
+                    src="https://celadonbooks.com/wp-content/uploads/2019/10/reading-quotes-6.jpg"
+                    style="width:100%;max-width:1000px;margin-top:32px;">
+            </div>
+        </div>
+
+        <!-- Kontainer Pesan -->
+        <div class="w3-container" id="pesan" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Tuliskan pesan</span></h5>
+                <p>buku apa yang sudah kamu baca?</p>
+                <!--Di bawah ini ada gambar pahlawan secara umum, silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="ilustrasi membaca di atas form pesan"
+                    src="https://celadonbooks.com/wp-content/uploads/2019/10/reading-quotes-5.jpg"
+                    style="width:100%">
+                <p><span class="w3-tag">AYO!</span>kita membaca buku</p>
+
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nama" required
+                            name="Nama"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Judul buku"
+                            required name="Judul buku"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local"
+                            placeholder="Tanggal dan Waktu" required name="Tanggal" value="2020-11-16T20:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                            placeholder="Pesan untuk pengarang buku" required name="Pesan"></p>
+                    <p><button class="w3-button w3-black" type="submit">KIRIM PESAN</button></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
